@@ -11,7 +11,7 @@ pares = [
     ],
      [
         r"cual es tu nombre ?",
-        ["Mi nombre es Chatbot ?",]
+        ["Mi nombre es FED",]
     ],
     [
         r"como estas ?",
@@ -19,27 +19,45 @@ pares = [
     ],
     [
         r"hola|hey|buenas",
-        ["Hola", "Que tal ¿En que te podemos ayudar?",]
+        ["Hola", "Que tal ¿En que te puedo ayudar?",]
     ],
     [
-        r"que (.*) quieres ?",
-        ["Nada gracias",]
+        r"que (.*) se te ofrece|Que puedo hacer por ti ?",
+        ["Nada gracias"," quisiera hacer una consulta"]
         
     ],
     [
         r"(.*) creado ?",
         ["Fui creado hoy",]
     ],
+     [
+        r" indique su genero ?",
+        ["Mujer | Hombre",]
+    ],
+     [
+        r"Que sintomas tiene ?",
+        ["Sensacion de fiebre" | "Tos" | "Dolor de cabeza" ]
+    ],
+     [
+        r" Desde cuando presenta los sintomas ?", 
+        ["Horas| Varios dias |Semanas|Meses"]
+     ]
+     [
+        r"Tengo gripa ?",
+        ["Le recomiento tomar alguna pastilla",]
+    ],
+
     [
         r"fiebre|calentura| tos",
-        [" usted debe cuidarse mas y te recomiendo que consuma unas pastillas "]
+        [" usted debe cuidarse mas y te recomiendo que consumir pastillas "]
     ],
     [
         r"Cuales son|me puede recetar|recetar",
         [" paracetanol "]
-    ],[
+    ],
+      [
         r"finalizar",
-        ["Chao","Fue bueno hablar contigo"]
+        ["Chao","Fue bueno hablar contigo", "Hasta pronto"]
 ]
 ]
 def chatear():
